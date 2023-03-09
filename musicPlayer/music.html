@@ -1,0 +1,93 @@
+<!--
+    ====
+    video: 6-54
+    video: 8:29
+    video:
+    video: 
+    ====
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobinson music player</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="music1.css" />
+    <!-- google icons links //do not work without DATA-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 
+            =====
+            Main Code
+            =====
+         -->
+      <div class="top-bar">
+        <i class="material-icons">favorite_border</i>
+        <span>Now playing</span>
+        <i class="material-icons">add</i>
+      </div>
+
+      <div class="img-area">
+        <img src="images/music-1.jpg" alt="" />
+      </div>
+
+      <div class="song-details">
+        <p class="name">Marley bird - Home</p>
+        <p class="artist">Jordan Scho</p>
+      </div>
+
+      <div class="progress-area">
+        <div class="progress-bar">
+          <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="max-duration">1:00</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <i id="repeat-plist" class="material-icons" title="playlist looped"
+          >repeat</i
+        >
+        <i id="prev" class="material-icons prev">fast_rewind</i>
+
+        <div class="play-pause">
+          <i class="material-icons play">play_arrow</i>
+        </div>
+
+        <i id="next" class="material-icons next">fast_forward</i>
+        <i id="more-music" class="material-icons">queue_music</i>
+      </div>
+
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span>Music list</span>
+          </div>
+          <i id="close" class="material-icons">close</i>
+        </div>
+        <ul></ul>
+      </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.js"></script>
+    <!-- music script -->
+    <script src="music-list.js"></script>
+    <!-- music-list link-->
+    <script src="script.js"></script>
+  </body>
+</html>
